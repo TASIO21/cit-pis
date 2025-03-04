@@ -2,7 +2,7 @@ import threading
 import time
 
 class LibrarySystem:
-    def init(self, Z, Y):
+    def __init__(self, Z, Y):
         self.Z = Z  # Количество книг
         self.Y = Y  # Количество читателей
         self.lock = threading.Lock()  # Блокировка для писателей
